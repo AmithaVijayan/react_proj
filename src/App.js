@@ -1,25 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+// import React from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// class App extends React.Component{
+//     render(){
+//         return <h1>I am class based Component</h1>
+//     }
+// }
+
+// export default App;
+
+// import React from "react";
+
+// let App = () => {
+//     return <h1> i am functional Component</h1>;
+// };
+
+// export default App;
+
+// import React , {Fragment} from "react";
+// import ClassBasedComponent from "./Components/ClassBasedComponent";
+// import FunctionalBasedComponent from "./Components/FunctionalBasedComponent";
+
+// let App = () => {
+//     return (
+//         <Fragment>
+//             <ClassBasedComponent/>
+//             <FunctionalBasedComponent/>
+//         </Fragment>
+//     );
+// };
+
+// export default App;
+
+import React , {Fragment} from "react";
+import EmpComponent from "./Components/empComponent";
+import HeaderComponent from "./Components/HeaderComponent";
+import StateExample from "./Components/StateExample";
+
+let app = () => {
+    return (
+        <Fragment>
+            <header>
+                <HeaderComponent/>
+            </header>
+            <main>
+                <EmpComponent />
+            </main>
+        </Fragment>
+    )
 }
-
-export default App;
+export default app;
